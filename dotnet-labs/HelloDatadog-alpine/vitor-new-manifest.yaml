@@ -17,14 +17,14 @@ spec:
         app: log-datadog
         tags.datadoghq.com/env: development
         tags.datadoghq.com/service: log-datadog
-        tags.datadoghq.com/version: 5.0.0
+        tags.datadoghq.com/version: 6.0.0
         admission.datadoghq.com/enabled: "true"
       annotations:
         admission.datadoghq.com/dotnet-lib.version: v3.6.1
     spec:
       containers:
         - name: final-image
-          image: vimouzin12/helpon:1.0.0
+          image: vimouzin12/kool1:8.0.0
           env:
             - name: DD_LOGS_INJECTION
               value: "true"
